@@ -5,7 +5,7 @@ int main() {
   cout << "Enter size of array" << endl;
   cin >> size;
   cout << "Enter elements to make an array" << endl;
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size - 1; i++) {
     cin >> arr[i];
   }
   cout << "Enter position that you want to insert an element" << endl;
@@ -17,10 +17,9 @@ int main() {
   }
   arr[position] = item;
   size++;
-  cout<<"The final array is"<<endl;
-  for(int i=0;i<size;i++)
-    {
-      cout<<arr[i]<<endl;
-    }
+  cout << "The final array is" << endl;
+  for (int i = 0; i < size; i++) {
+    cout << arr[i] << endl;
+  }
   return 0;
 }
