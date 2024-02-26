@@ -12,6 +12,7 @@ int main() {
     if (arr[i] == key) {
       cout << "Number found at index number " << i << endl;
       break;
-    }
+    } else
+      cout << "Number not found" << endl;
   }
 }
