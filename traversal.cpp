@@ -13,7 +13,9 @@ int main() {
   for (i = 0; i < size; i++) {
     if (arr[i] == element) {
       cout << "Element found at index " << i << endl;
-    }
+      break;
+    } else
+      cout << "Element not found" << endl;
   }
   return 0;
 }
